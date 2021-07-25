@@ -19,4 +19,13 @@ function compute()
     document.getElementById("rate_val").innerText=rateval;
 }
 
+
+//Check for positive values
+function validateAmount() {
+    var principal = document.getElementById("principal").value;
+    var biggerThanZero = parseInt(principal) > 0;
+    if (!biggerThanZero) {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }
         
