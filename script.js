@@ -7,7 +7,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years); 
 
     //Create the Interest text
-    document.getElementById("result").innerText = "Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
+    document.getElementById("result").innerHTML = "Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
         "at an interest rate of <mark>" + rate + "</mark>,<br/>" +
         "You will receive an amount of <mark>" + interest + "</mark>,<br/> " +
         "in the year <mark>" + yearInTheFuture + "</mark>";
