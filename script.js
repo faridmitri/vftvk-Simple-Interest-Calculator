@@ -28,4 +28,4 @@ function validateAmount() {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
-        
+}
